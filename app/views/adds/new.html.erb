@@ -1,0 +1,22 @@
+<center> <h1> Hello adds page </h1> <center>
+
+<%= form_with scope: :add,url: adds_path, local: true do |form| %>
+    <p>
+      <%= form.label :title %><br>
+      <%= form.text_field :title %>
+    </p>
+
+    <p>
+      <%= form.label :category %><br><br>
+      <%= form.select(:category, Add::Category) %>
+    </p>
+   
+    <p>
+      <%= form.label :text %><br>
+      <%= form.text_area :text %>
+    </p>
+   
+    <p>
+      <%= form.submit %>
+    </p>
+  <% end %>
