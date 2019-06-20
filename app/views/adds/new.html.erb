@@ -1,4 +1,5 @@
 <center> <h1> Hello adds page </h1> <center>
+<div class = "form-type">
 <%= form_for @post, url: {action: "create"} do |f| %>
     <p>
       <%= f.label :title %><br>
@@ -25,4 +26,5 @@
     <p>
       <%= f.submit %>
     </p>
+    </div>
   <% end %>

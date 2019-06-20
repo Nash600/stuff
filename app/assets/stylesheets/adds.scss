@@ -1,3 +1,12 @@
 // Place all the styles related to the Adds controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+.boss {
+display: flex;
+flex-direction: row;
+justify-content: space-between;
+}
+.boss {
+    margin-left: 0.6em;
+    margin-right:0.7em;
+}
