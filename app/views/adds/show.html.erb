@@ -1,0 +1,29 @@
+<p>
+  <strong>Title:</strong>
+  <%= @post.title %>
+</p>
+
+<p>
+  <strong>Category:</strong>
+  <%= @post.category %>
+</p>
+ 
+<p>
+  <strong>Text:</strong>
+  <%= @post.text %>
+</p>
+
+<p>
+  <strong>Image:</strong>
+  <% if @post.image.attached?%> 
+  <%= image_tag(@post.image, :width => 400, :crop => "pad") %>
+<%end%>
+</p>
+<% if current_user && current_user.id == @post.user_id %>
+      <td></td>
+      <td><%= link_to 'Edit', edit_add_path(@post) %></td>
+      <td><%= link_to 'Delete this post', add_path(@post), method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      <p><%= link_to "Back", adds_path %></p>
+    <% end %>
+
+

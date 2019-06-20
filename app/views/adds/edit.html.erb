@@ -1,0 +1,22 @@
+<h1> Edit Post </h1>
+<%= form_for @post, url: {action: "update"} do |f| %>
+    <%= f.label :Title%>
+    <%= f.text_field :title %>
+
+    <%= f.label :Category%>
+    <%= f.select(:category, Add::Category) %>
+
+    <%= f.label :Text%>
+    <%= f.text_field :text %>
+
+    <p>
+      <%= f.label :browse %><br>
+      <% f.file_field :image %>
+      <%# f.file_field :images, multiple: true, name: "attachment[file][]" %>
+      
+    </p>
+
+   
+
+    <%= f.submit "Save" %>
+<% end %>

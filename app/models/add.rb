@@ -1,3 +1,5 @@
 class Add < ApplicationRecord
-    Category=["select", "cars", "services", "furniture"]
+    belongs_to :user
+    Category=["", "cars", "services", "furniture"]
+    has_one_attached :image
 end

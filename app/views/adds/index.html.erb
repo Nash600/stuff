@@ -1,0 +1,17 @@
+<h1>All posts index</h1>
+<h3>
+    <%= link_to 'Add post', new_add_path %>
+</h3>
+
+
+<table>
+    <% @post.each do |post | %>
+        <tr>
+            <td> <%= post.title %> </td>
+            <td> <%= post.category %> </td>
+            <td> <%= post.text %> </td>
+            
+            <td> <%= link_to "View", add_path(post) %>
+        </tr>
+    <% end %>
+</table>

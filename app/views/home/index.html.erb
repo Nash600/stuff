@@ -1,3 +1,8 @@
 <center><h1> Hello <h1><center>
 <br>
-<%= link_to "furnitures", furnitures_path  %>
+
+
+<h2> Find Product by Category </h2>
+  <%= link_to "Cars", adds_path(:category=> "cars") %>
+  <%= link_to "Services", adds_path(:category=>"services") %>
+  <%= link_to "Furniture", adds_path(:category=>"furniture") %>

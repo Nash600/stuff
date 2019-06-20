@@ -1,22 +1,28 @@
 <center> <h1> Hello adds page </h1> <center>
-
-<%= form_with scope: :add,url: adds_path, local: true do |form| %>
+<%= form_for @post, url: {action: "create"} do |f| %>
     <p>
-      <%= form.label :title %><br>
-      <%= form.text_field :title %>
+      <%= f.label :title %><br>
+      <%= f.text_field :title, :required => true %>
     </p>
 
     <p>
-      <%= form.label :category %><br><br>
-      <%= form.select(:category, Add::Category) %>
+      <%= f.label :category %><br><br>
+      <%= f.select(:category, Add::Category)%>
     </p>
    
     <p>
-      <%= form.label :text %><br>
-      <%= form.text_area :text %>
+      <%= f.label :description %><br>
+      <%= f.text_area :text, :required => true %>
+    </p>
+
+    <p>
+    
+      <%= f.label :browse %><br>
+      <%= f.file_field :image , multiple: false %>
+      
     </p>
    
     <p>
-      <%= form.submit %>
+      <%= f.submit %>
     </p>
   <% end %>
