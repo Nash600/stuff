@@ -7,7 +7,7 @@ cars , and furniture.
     Sign Up/Log in
     Creat listing items
     Mnage items - add/ delete
-    Buyrs can comments listing items
+    Buyres can comments listing items
   
 * Ruby version-2.5.1
 
