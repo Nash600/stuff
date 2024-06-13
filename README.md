@@ -14,5 +14,9 @@ cars , and furniture.
 * Database postgresql
 
 * Deployment instructions
+* To get this project to work :
+* gem install rails
+* brew install postgresql
+* brew install node
 
-* https://warm-savannah-71850.herokuapp.com/home
+* https://warm-savannah-71850.herokuapp.com/home (Herokuapp was used at the time to test the software functionality - it is not working now)
