@@ -1,23 +1,17 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+This project idea is like an online market place where users can sell items such as:
+cars , and furniture.
 
-Things you may want to cover:
+* Main functions are :
+    Sign Up/Log in
+    Creat listing items
+    Mnage items - add/ delete
+    Buyrs can comments listing items
+  
+* Ruby version-2.5.1
 
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
+* Database postgresql
 
 * Deployment instructions
 
